@@ -1,6 +1,13 @@
 # GA-Mazon
 E-commerce, redefined
 
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Requirements](#requirements)
+
+## Screenshots
+
+<img width="1071" alt="screen shot 2017-12-14 at 3 39 36 pm" src="https://user-images.githubusercontent.com/31255999/34019708-0cfdaa14-e0e5-11e7-8601-d0a29f919e65.png">
 
 ## Features
 
