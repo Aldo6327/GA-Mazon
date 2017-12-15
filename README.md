@@ -37,4 +37,4 @@ E-commerce, redefined
 - Xcode 11+
 - Swift 4+
 
-** This App ranked #1 out of 15 in the the class (General Assembly iOS immersive SF)
+** This App ranked #2 out of 4 in the the class (General Assembly iOS immersive SF)
