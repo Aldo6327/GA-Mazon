@@ -1,0 +1,6 @@
+framework module Pods_GA_mazonUITests {
+  umbrella header "Pods-GA-mazonUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>58400665848-5g63fqqho1anvju2ov05u6kj95btntqu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.58400665848-5g63fqqho1anvju2ov05u6kj95btntqu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCnISdemM0ah6uDUlu_OP_zJZ0r29Qlxd0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>58400665848</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.general-assembly.GA-mazon</string>
+	<key>PROJECT_ID</key>
+	<string>ga-mazon-3bd06</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ga-mazon-3bd06.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:58400665848:ios:1c943ff29b933d5f</string>
+	<key>DATABASE_URL</key>
+	<string>https://ga-mazon-3bd06.firebaseio.com</string>
+</dict>
+</plist>

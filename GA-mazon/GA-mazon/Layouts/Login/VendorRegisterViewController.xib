@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="GA_mazon" customModuleProvider="target">
+            <connections>
+                <outlet property="userEmailText" destination="Lp7-w5-a6l" id="rf9-zP-x4t"/>
+                <outlet property="userNameText" destination="h3W-hX-y0A" id="na7-ix-buF"/>
+                <outlet property="userPasswordText" destination="j6m-kp-wYm" id="zxO-cL-Zer"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2jT-gz-3Se">
+                    <rect key="frame" x="20" y="45" width="335" height="320"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3W-hX-y0A">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="3Pd-nj-HJF"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lp7-w5-a6l">
+                            <rect key="frame" x="0.0" y="54" width="335" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="WLJ-hY-NyG"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j6m-kp-wYm">
+                            <rect key="frame" x="0.0" y="108" width="335" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="vEb-JF-clu"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cob-oN-a6Q">
+                            <rect key="frame" x="0.0" y="162" width="335" height="44"/>
+                            <color key="backgroundColor" red="0.41832247379999998" green="0.89401227240000003" blue="0.60268610720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="PCY-la-LyL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Register">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapRegisterButton:" destination="-1" eventType="touchUpInside" id="Uhl-NH-RKK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdP-iq-xmV">
+                            <rect key="frame" x="0.0" y="216" width="335" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="oRR-2o-AEz"/>
+                            </constraints>
+                            <state key="normal" title="Have an account? Login here"/>
+                            <connections>
+                                <action selector="didTapLoginHereButton:" destination="-1" eventType="touchUpInside" id="Fni-YX-h70"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or register by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbs-rF-fc7">
+                            <rect key="frame" x="0.0" y="246" width="335" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="iKy-Cd-skL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.77639585730000005" green="0.77652460339999996" blue="0.77636843919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-LM-1WK" customClass="FBSDKLoginButton">
+                            <rect key="frame" x="0.0" y="276" width="335" height="44"/>
+                            <color key="backgroundColor" red="0.23427984120000001" green="0.33680975439999999" blue="0.55716162920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="1x5-Al-tzP"/>
+                            </constraints>
+                            <state key="normal" title="Facebook">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapFBRegisterButton:" destination="-1" eventType="touchUpInside" id="GBY-3Q-vuc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2jT-gz-3Se" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Fkn-kR-5tr"/>
+                <constraint firstItem="2jT-gz-3Se" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="Qwa-Po-jsy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2jT-gz-3Se" secondAttribute="bottom" constant="20" id="cHK-7A-9L4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2jT-gz-3Se" secondAttribute="trailing" constant="20" id="tbe-6h-JuB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

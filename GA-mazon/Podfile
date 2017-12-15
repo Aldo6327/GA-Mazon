@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'GA-mazon' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GA-mazon
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Crash'
+  pod 'Firebase/Auth'
+  pod 'AlamofireImage'
+	pod 'Firebase/Messaging'
+
+  target 'GA-mazonTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GA-mazonUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
