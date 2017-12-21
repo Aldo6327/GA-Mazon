@@ -1,1 +1,3 @@
 *.rb linguist-language=Swift
+Bolts/* linguist-vendored
+Objective-C linguist-vendored=false
