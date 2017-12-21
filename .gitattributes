@@ -1,3 +1,0 @@
-*.rb linguist-language=Swift
-GA-mazon/Bolts.framework/* linguist-vendored
-Objective-C linguist-vendored=false
