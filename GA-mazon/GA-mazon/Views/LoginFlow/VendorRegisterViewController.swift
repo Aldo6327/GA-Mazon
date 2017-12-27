@@ -2,7 +2,7 @@
 //  VendorRegisterViewController.swift
 //  project3AutoLayout
 //
-//  Created by Admin on 10/27/17.
+//  Created by Sheeja  on 10/27/17.
 //  Copyright © 2017 Aldo Ayala. All rights reserved.
 //
 

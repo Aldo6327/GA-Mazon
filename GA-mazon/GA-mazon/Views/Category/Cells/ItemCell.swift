@@ -2,14 +2,15 @@
 //  ItemCell.swift
 //  GA-mazon
 //
-//  Created by Admin on 10/29/17.
-//  Copyright © 2017 General Assembly. All rights reserved.
+//  Created by Sheeja  on 10/29/17.
+//  Copyright © 2017 Khaleesi . All rights reserved.
 //
 
 import UIKit
 
-protocol ItemCellDelegate {
+@objc protocol ItemCellDelegate {
     func collectionViewCell(_ collectionViewCell: ItemCell, didSelectFavoriteButtonAt indexPath: IndexPath)
+    @objc optional func collectionViewCell(_ collectionViewCell: ItemCell, didSelectCartButtonAt indexPath: IndexPath)
 }
 
 class ItemCell: UICollectionViewCell {
@@ -18,6 +19,7 @@ class ItemCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var overlayView: UIView!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var addToCartButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -26,6 +28,12 @@ class ItemCell: UICollectionViewCell {
     
     @IBAction func favoriteButtonDidSelect(_ sender: UIButton) {
         delegate?.collectionViewCell(self, didSelectFavoriteButtonAt: indexPath)
+    }
+    
+    @IBAction func addToCartButtonDidSelect(_ sender: UIButton) {
+        if let collectionViewCell = delegate?.collectionViewCell {
+            collectionViewCell(self, indexPath)
+        }
     }
     
     override func awakeFromNib() {

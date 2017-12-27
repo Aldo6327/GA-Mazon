@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -56,23 +56,38 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94R-ME-hEa">
-                                                            <rect key="frame" x="8" y="45" width="144" height="17"/>
+                                                            <rect key="frame" x="8" y="45" width="112" height="17"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFB-5W-JpM">
+                                                            <rect key="frame" x="120" y="35" width="40" height="35"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="1aQ-Di-Tpm"/>
+                                                                <constraint firstAttribute="width" constant="40" id="8sX-yQ-X2q"/>
+                                                            </constraints>
+                                                            <color key="tintColor" red="1" green="0.5944545269" blue="0.055782400070000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" image="ico_tab_cart"/>
+                                                            <connections>
+                                                                <action selector="addToCartButtonDidSelect:" destination="GAx-hF-fIZ" eventType="touchUpInside" id="yNt-AJ-lGj"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="FFB-5W-JpM" secondAttribute="bottom" id="5qO-QU-JRS"/>
                                                         <constraint firstItem="fVo-r5-S8J" firstAttribute="top" secondItem="4K5-qV-uTg" secondAttribute="top" constant="8" id="63e-W7-zLT"/>
-                                                        <constraint firstAttribute="trailing" secondItem="94R-ME-hEa" secondAttribute="trailing" constant="8" id="8He-Gv-mEu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="94R-ME-hEa" secondAttribute="trailing" constant="40" id="8He-Gv-mEu"/>
                                                         <constraint firstItem="94R-ME-hEa" firstAttribute="leading" secondItem="4K5-qV-uTg" secondAttribute="leading" constant="8" id="K6M-HW-s18"/>
                                                         <constraint firstItem="17p-Pb-V1j" firstAttribute="top" secondItem="fVo-r5-S8J" secondAttribute="bottom" id="VUq-TO-lT8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FFB-5W-JpM" secondAttribute="trailing" id="bsR-8E-SLt"/>
                                                         <constraint firstItem="fVo-r5-S8J" firstAttribute="leading" secondItem="4K5-qV-uTg" secondAttribute="leading" constant="8" id="cCp-Vh-Xm6"/>
                                                         <constraint firstAttribute="bottom" secondItem="94R-ME-hEa" secondAttribute="bottom" constant="8" id="chT-Vu-kaW"/>
                                                         <constraint firstAttribute="trailing" secondItem="17p-Pb-V1j" secondAttribute="trailing" constant="8" id="i6Q-Nr-KDq"/>
                                                         <constraint firstItem="94R-ME-hEa" firstAttribute="top" secondItem="17p-Pb-V1j" secondAttribute="bottom" constant="8" id="jPt-Se-siN"/>
                                                         <constraint firstAttribute="height" constant="70" id="lGs-4q-xIJ"/>
+                                                        <constraint firstItem="FFB-5W-JpM" firstAttribute="leading" secondItem="94R-ME-hEa" secondAttribute="trailing" id="oMm-9Y-Nit"/>
                                                         <constraint firstItem="17p-Pb-V1j" firstAttribute="leading" secondItem="4K5-qV-uTg" secondAttribute="leading" constant="8" id="rLx-xf-F1F"/>
                                                         <constraint firstAttribute="trailing" secondItem="fVo-r5-S8J" secondAttribute="trailing" constant="8" id="u0H-l6-Dfj"/>
                                                     </constraints>
@@ -112,6 +127,7 @@
                                     <constraint firstItem="jgo-AE-YxV" firstAttribute="leading" secondItem="GAx-hF-fIZ" secondAttribute="leading" id="mRz-mx-8dg"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="addToCartButton" destination="FFB-5W-JpM" id="Yjf-uh-LNJ"/>
                                     <outlet property="containerView" destination="jgo-AE-YxV" id="juW-G3-vEs"/>
                                     <outlet property="favoriteButton" destination="8Il-Xx-hC5" id="IqS-QL-f5V"/>
                                     <outlet property="imageView" destination="6Z4-dK-9a0" id="PSs-89-nVF"/>
@@ -119,6 +135,7 @@
                                     <outlet property="priceLabel" destination="94R-ME-hEa" id="AK9-f8-gYg"/>
                                     <outlet property="subtitleLabel" destination="17p-Pb-V1j" id="zmB-rc-VkQ"/>
                                     <outlet property="titleLabel" destination="fVo-r5-S8J" id="Ntb-Zp-aMw"/>
+                                    <segue destination="rka-i5-uVa" kind="show" id="dnX-Vb-TZn"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -1872,7 +1889,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Woe-Ba-Qop" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343" y="-1554"/>
+            <point key="canvasLocation" x="1138" y="-1071"/>
         </scene>
         <!--Product Review Table View Controller-->
         <scene sceneID="eZC-o8-uMN">

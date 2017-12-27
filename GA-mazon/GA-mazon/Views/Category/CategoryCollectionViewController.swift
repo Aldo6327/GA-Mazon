@@ -2,8 +2,8 @@
 //  CategoryCollectionViewController.swift
 //  GA-mazon
 //
-//  Created by Admin on 10/26/17.
-//  Copyright © 2017 General Assembly. All rights reserved.
+//  Created by Sheeja  on 10/26/17.
+//  Copyright © 2017 Khaleesi . All rights reserved.
 //
 
 import UIKit
@@ -80,6 +80,7 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         
         let favoriteImage = FavoritesController.isFavorite(product) ? #imageLiteral(resourceName: "ico_tab_favorite_filled") : #imageLiteral(resourceName: "ico_tab_favorite")
         cell.favoriteButton.setImage(favoriteImage.withRenderingMode(.alwaysTemplate), for: .normal)
+        
         return cell
     }
     
@@ -88,10 +89,10 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         
-        let product = category.products[indexPath.item]
-        // TEMP: - remove this later
-        let userId = CacheController.readUserInfo().id
-        OrderController.addOrder(from: product, userId: userId)
+//        let product = category.products[indexPath.item]
+//        // TEMP: - remove this later
+//        let userId = CacheController.readUserInfo().id
+//        OrderController.addOrder(from: product, userId: userId)
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
@@ -134,4 +135,37 @@ class CategoryCollectionViewController: UICollectionViewController, UICollection
         }
         collectionViewCell.favoriteButton.setImage(favoriteImage.withRenderingMode(.alwaysTemplate), for: .normal)
     }
+    
+    func collectionViewCell(_ collectionViewCell: ItemCell, didSelectCartButtonAt indexPath: IndexPath) {
+        let product = category.products[indexPath.item]
+        let userId = CacheController.readUserInfo().id
+        OrderController.addOrder(from: product, userId: userId)
+        
+        let alert = UIAlertController(title: "", message: "Added to cart", preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
+        
+        // number of seconds (in this case 1 seconds)
+        
+        let when = DispatchTime.now() + 1
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            alert.dismiss(animated: true, completion: nil)
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

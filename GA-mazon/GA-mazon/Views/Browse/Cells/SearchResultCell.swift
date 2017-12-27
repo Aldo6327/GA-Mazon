@@ -2,8 +2,8 @@
 //  SearchResultCell.swift
 //  GA-mazon
 //
-//  Created by Admin on 11/8/17.
-//  Copyright © 2017 General Assembly. All rights reserved.
+//  Created by Sheeja  on 11/8/17.
+//  Copyright © 2017 Khaleesi . All rights reserved.
 //
 
 import UIKit

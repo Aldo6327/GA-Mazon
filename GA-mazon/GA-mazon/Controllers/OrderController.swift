@@ -3,7 +3,7 @@
 //  GA-mazon
 //
 //  Created by Admin on 11/7/17.
-//  Copyright © 2017 General Assembly. All rights reserved.
+//  Copyright © 2017 Khaleesi. All rights reserved.
 //
 
 import Foundation
